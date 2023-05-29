@@ -1,1 +1,53 @@
 
+// SPDX-License-Identifier: MIT
+pragma solidity 0.8.18;
+
+contract Assignment{
+
+    uint myNum;
+    string myStr;
+    bool myBool;
+    address myEthAddress;
+
+
+    // takes a value _number and assigns it to the state variable myNum
+    function setNumber(uint _number) public {
+          myNum = _number;
+    }
+
+    // returns the value of the state variable myNum
+    function getNumber() public view  returns(uint){
+        return myNum;
+    }
+
+    // takes a value _str and assigns it to the state variable myStr
+    function setString(string memory _str) public {
+          myStr = _str;
+    }
+
+    // returns the value of the state variable myStr
+    function getString() public view  returns(string memory){
+        return myStr;
+    }
+
+
+    // takes a value _bool and assigns it to the state variable myBool
+    function setBoolean(bool _bool) public {
+          myBool = _bool;
+    }
+
+    // returns the value of the state variable myBool
+    function getBoolean() public view  returns(bool){
+        return myBool;
+    }
+
+    // takes a value _adrs and assigns it to the state variable myEthAddress
+    function setAdddress(address _adrs) public {
+          myEthAddress = _adrs;
+    }
+
+    // returns the value of the state variable myEthAddress
+    function getAddress() public view  returns(address){
+        return myEthAddress;
+    }
+}
